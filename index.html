@@ -216,6 +216,13 @@
       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
       g.async=true; g.src=u+'js/'; s.parentNode.insertBefore(g,s);
     })();
+
+    document.addEventListener('keydown', function(event) {
+            if (event.key === '`') {
+                window.location.href = 'code.html';
+            }
+        });
+
   </script>
 
   </body>
